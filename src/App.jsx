@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 
-// Display Component Function
+
 function Display({ value }) {
   return (
     <input
@@ -13,7 +13,7 @@ function Display({ value }) {
   );
 }
 
-// Button Component Function
+
 function Button({ label, className = "", onClick }) {
   return (
     <button className={className} onClick={onClick}>
@@ -23,10 +23,10 @@ function Button({ label, className = "", onClick }) {
 }
 
 export default function App() {
-  // State to hold the current display message
+  
   const [displayText, setDisplayText] = useState("10 Things That Require Zero Talent");
 
-  // Mapping keys to their respective output values
+  
   const mappings = {
     "1": "Being On Time",
     "2": "Making An Effort",
@@ -39,10 +39,10 @@ export default function App() {
     "9": "Being Prepared",
     "0": "Having A Strong Work Ethic",
     "NAME": "ERICSSON PASTORES",
-    "SUBJ": "IT3A" // or C-PCIT9 depending on your subject code requirement
+    "SUBJ": "C-PCIT9" 
   };
 
-  // Handler for button click
+  
   const handleClick = (label) => {
     if (mappings[label]) {
       setDisplayText(mappings[label]);
