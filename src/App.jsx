@@ -13,7 +13,6 @@ function Display({ value }) {
   );
 }
 
-
 function Button({ label, className = "", onClick }) {
   return (
     <button className={className} onClick={onClick}>
